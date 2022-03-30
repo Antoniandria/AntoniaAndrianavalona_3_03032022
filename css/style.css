@@ -63,7 +63,7 @@ body {
   font-size: 1rem; }
 
 h1 {
-  font-size: 1.9rem; }
+  font-size: 1.7rem; }
 
 h2 {
   font-size: 1.5rem; }
@@ -75,8 +75,11 @@ h4 {
   font-family: Shrikhand, Helvetica, sans-serif;
   font-size: 1.1rem; }
 
-p {
+h5 {
   font-size: 1.1rem; }
+
+p {
+  font-size: 1rem; }
 
 .header {
   display: flex;
@@ -114,6 +117,7 @@ p {
     margin-top: 20px;
     margin-bottom: 30px; }
   .main p {
+    font-weight: lighter;
     text-align: center;
     padding: 0 20px 20px; }
   .main button {
@@ -128,7 +132,7 @@ p {
     box-shadow: 0 3px 7px grey; }
 
 .option {
-  padding: 30px 20px; }
+  padding: 60px 20px; }
   .option .option__link {
     display: grid;
     grid-gap: 20px;
@@ -136,27 +140,46 @@ p {
     .option .option__link li {
       display: flex;
       padding: 0 20px;
-      align-items: center; }
+      align-items: center;
+      background: rgba(189, 189, 189, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 3px 10px lightgray; }
     .option .option__link .fas {
-      width: 40px; }
+      width: 40px;
+      font-size: 18px; }
   .option h2 {
     padding-bottom: 20px; }
 
 .card {
-  padding: 30px 20px;
+  padding: 60px 20px;
   display: grid;
-  grid-gap: 20px; }
+  grid-gap: 20px;
+  background: rgba(189, 189, 189, 0.2); }
+  .card article {
+    box-shadow: 0px 5px 5px lightgrey;
+    border-radius: 20px; }
+  .card img {
+    height: 180px;
+    margin: auto;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 20px 20px 0 0; }
   .card figcaption {
     position: relative;
-    padding: 10px; }
+    padding: 15px;
+    color: black;
+    background: white;
+    border-radius: 0 0 20px 20px; }
+    .card figcaption p {
+      font-weight: lighter; }
   .card .fa-heart {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
-    color: black; }
+    right: 20px;
+    bottom: 30px;
+    font-size: 22px;
+    font-weight: lighter; }
   .card .fa-heart:hover {
-    font-style: none;
-    background: linear-gradient(#FF79DA, #9356DC); }
+    color: linear-gradient(#FF79DA, #9356DC); }
 
 .footer {
   padding: 20px;

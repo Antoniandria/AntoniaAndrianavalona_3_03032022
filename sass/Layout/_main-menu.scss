@@ -1,0 +1,64 @@
+main {
+  background: $background_menu;
+  padding-bottom: 50px;
+  header {
+    padding-bottom: 0;
+    img {
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: Shrikhand;
+    padding: 30px 30px 20px 20px;
+    i {
+      font-size: 22px;
+      padding-top: 5px;
+    }
+  }
+  section {
+    padding: 10px;
+    ul {
+      display: grid;
+      grid-gap: 5px;
+    }
+    h5 {
+      font-weight: normal;
+      padding-left: 5px;
+    }
+    .border_bottom {
+      margin: 5px;
+      border-top: solid 3px $green;
+      width: 45px;
+    }
+    li {
+      margin-top: 15px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 3px 5px lightgray;
+      padding: 10px;
+      position: relative;
+      span {
+        font-weight: lighter;
+      }
+      p {
+        position: absolute;
+        bottom: 10px;
+        right:20px;
+      }
+    }
+  }
+  button {
+    display: block;
+    margin: 40px auto;
+    width: 220px;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 3px 7px grey;
+  }
+}

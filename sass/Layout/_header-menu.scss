@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px 0 20px;
+  .header__link {
+    padding-top: 10px;
+    color: black;
+  }
+  .header__title {
+    margin: auto;
+    color: black;
+    font-family: Shrikhand;
+  }
+}

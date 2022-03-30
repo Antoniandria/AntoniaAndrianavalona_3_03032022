@@ -1,7 +1,9 @@
-@import 'Base/normalize';
-@import 'Base/initialization';
-@import 'Layout/header';
-@import 'Layout/footer';
+@import "Base/normalize";
+@import "Base/variables";
+@import "Base/initialization";
+@import "Layout/header-menu";
+@import "Layout/main-menu";
+@import "Layout/footer";
 
 
 

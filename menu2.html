@@ -9,98 +9,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="sass/Base/_normalize.scss">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" type="image/x-icon" href="logo/ohmyfood@2x.svg"/>
     <title>La note enchantée</title>
 </head>
 <body>
-<header>
-    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-    <a href="index.html"><h1>ohmyfood</h1></a>
+<header class="header" style="background-color: cornflowerblue">
+    <a class="header__link" href="index.html"><i class="fas fa-arrow-left"></i></a>
+    <a class="header__title" href="index.html">
+        <h1 style="background-color: darkgreen">ohmyfood</h1>
+    </a>
 </header>
 <main>
     <header>
         <img src="images/restaurants/menu2.jpg">
-        <h2>La note enchantée</h2>
-        <i class="far fa-heart"></i>
+        <h2>La note enchantée <i class="far fa-heart"></i></h2>
+
     </header>
     <section>
         <h3>ENTREES</h3>
+        <div class="border_bottom"></div>
         <ul>
             <li>
-                <span>Ravioles de foie gras</span>
+                <h3>Ravioles de foie gras</h3>
                 <span>Accompagnés de leur crème à la truffe</span>
-                <span>25€</span>
+                <p>25€</p>
             </li>
             <li>
-                <span>Caviar osciètre</span>
+                <h3>Caviar osciètre</h3>
                 <span>Sur blini à la farine de blé noir</span>
-                <span>35€</span>
+                <p>35€</p>
             </li>
             <li>
-                <span>Homard et espuma de...</span>
+                <h3>Homard et espuma de...</h3>
                 <span>Mariné aux zests d'orange</span>
-                <span>20€</span>
+                <p>20€</p>
             </li>
             <li>
-                <span>Foie gras de canard cuit entier</span>
+                <h3>Foie gras de canard cuit entier</h3>
                 <span>Confiture de figue et pain toasté</span>
-                <span>35€</span>
+                <p>35€</p>
             </li>
         </ul>
     </section>
     <section>
         <h3>PLATS</h3>
+        <div class="border_bottom"></div>
         <ul>
             <li>
-                <span>Noix de coquilles Saint-Jacques</span>
+                <h3>Noix de coquilles Saint-Jacques</h3>
                 <span>Sur lit de purée de céleri-rave</span>
-                <span>40€</span>
+                <p>40€</p>
             </li>
             <li>
-                <span>Langoustine poêlée</span>
+                <h3>Langoustine poêlée</h3>
                 <span>Purée de patate douce</span>
-                <span>35€</span>
+                <p>35€</p>
             </li>
             <li>
-                <span>Mijoté de queue de boeuf</span>
+                <h3>Mijoté de queue de boeuf</h3>
                 <span>Et riz sauvage aux zests de citron</span>
-                <span>44€</span>
+                <p>44€</p>
             </li>
         </ul>
     </section>
     <section>
         <h2>DESSERTS</h2>
+        <div class="border_bottom"></div>
         <ul>
             <li>
-                <span>Macaron noisette et chocolat</span>
+                <h3>Macaron noisette et chocolat</h3>
                 <span>Glace au caramel brun et sel de Guérande</span>
-                <span>18€</span>
+                <p>18€</p>
             </li>
             <li>
-                <span>Baba au rhum revisité</span>
+                <h3>Baba au rhum revisité</h3>
                 <span>Avec son coulis de citron</span>
-                <span>22€</span>
+                <p>22€</p>
             </li>
             <li>
-                <span>Tarte au citron meringuée</span>
+                <h3>Tarte au citron meringuée</h3>
                 <span>Destructurée</span>
-                <span>23€</span>
+                <p>23€</p>
             </li>
         </ul>
     </section>
     <button>Commander</button>
 </main>
-<footer style="background-color: indigo" class="footer">
+<footer class="footer">
     <a href="index.html">
         <h4>ohmyfood</h4>
     </a>
     <div class="footer__link">
-        <a style="background-color: purple"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-        <a style="background-color: royalblue"><i class="fas fa-handshake-angle"></i>Devenir partenaire</a>
-        <a style="background-color: yellowgreen">Mentions légales</a>
-        <a style="background-color: yellow">Contact</a>
+        <a><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        <a><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        <a>Mentions légales</a>
+        <a>Contact</a>
     </div>
+</footer>
 </footer>
 </body>
 </html>
