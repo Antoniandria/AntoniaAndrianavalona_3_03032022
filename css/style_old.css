@@ -1,0 +1,55 @@
+body {
+  font-family: roboto; }
+
+header a {
+  text-align: center; }
+header h1 {
+  color: black;
+  font-family: Shrikhand; }
+
+.location label {
+  display: flex;
+  justify-content: center; }
+.location input {
+  text-align: center; }
+.location h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.location h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+.location button {
+  display: block;
+  margin: auto; }
+
+.option {
+  padding: 30px 20px; }
+
+.resto, .menu, .eat {
+  padding: 10px;
+  margin: 20px 0;
+  text-align: center; }
+
+.choice {
+  padding: 30px 20px; }
+  .choice a {
+    padding: 10px;
+    margin: 10px; }
+  .choice figcaption {
+    position: relative; }
+  .choice .fa-heart {
+    position: absolute;
+    right: 5px;
+    bottom: 5px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px; }
+  footer h4 {
+    font-family: Shrikhand;
+    color: white; }
+
+/*# sourceMappingURL=style_old.css.map */
