@@ -13,7 +13,7 @@
     padding-left: 15px;
     height: 100%;
     width: 160px;
-    background: $grey_label;
+    background: transparent;
     border: none;
   }
   h2 {
@@ -47,22 +47,78 @@
 
 .option {
   padding: 60px 20px;
+  position: relative;
+  ul {
+    padding-left: 10px;
+  }
     .option__link {
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(3, 70px);
-    li {
+    .resto, .menu {
       display: flex;
-      padding: 0 20px;
+      padding: 0 40px;
       align-items: center;
       background: $background_grey;
       border-radius: 20px;
       box-shadow: 0 3px 10px lightgray;
+      .fas {
+        width: 40px;
+        font-size: 18px;
+      }
     }
-    .fas {
-      width: 40px;
-      font-size: 18px;
+      .eat {
+        display: flex;
+        padding: 0 40px;
+        align-items: center;
+        background: rgba(195,154,243,0.24);
+        border-radius: 20px;
+        box-shadow: 0 3px 10px lightgray;
+        .fas {
+          width: 40px;
+          font-size: 18px;
+          color: $purple
+        }
+      }
     }
+  .option__link li:nth-child(1)::before {
+    content: "1";
+    color: white;
+    font-size: 14px;
+    background: $purple;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    left: 17px;
+    border-radius: 50px;
+  }
+  .option__link li:nth-child(2)::before {
+    content: "2";
+    color: white;
+    font-size: 14px;
+    background: $purple;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    left: 17px;
+    border-radius: 50px;
+  }
+  .option__link li:nth-child(3)::before {
+    content: "3";
+    color: white;
+    font-size: 14px;
+    background: $purple;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    left: 17px;
+    border-radius: 50px;
   }
   h2 {
     padding-bottom: 20px;

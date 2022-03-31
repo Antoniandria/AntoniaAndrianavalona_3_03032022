@@ -9,6 +9,7 @@ main {
     }
   }
   h1 {
+    border-radius: 20px 20px 0 0;
     display: flex;
     justify-content: space-between;
     font-family: Shrikhand;
@@ -16,6 +17,9 @@ main {
     i {
       font-size: 22px;
       padding-top: 5px;
+    }
+    i:checked {
+      color: linear-gradient ($pinky,$purple);
     }
   }
   section {
