@@ -130,6 +130,34 @@
   display: grid;
   grid-gap: 20px;
   background: $background_grey;
+  .menu1::before {
+    content: "Nouveau";
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    background: $green;
+    color: green;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 2px;
+  }
+  .menu2::before {
+    content: "Nouveau";
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    background: $green;
+    color: green;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 2px;
+  }
   article {
     box-shadow: 0px 5px 5px lightgrey;
     border-radius: 20px;

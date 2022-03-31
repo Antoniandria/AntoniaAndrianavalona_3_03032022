@@ -206,6 +206,32 @@ p {
   display: grid;
   grid-gap: 20px;
   background: rgba(189, 189, 189, 0.2); }
+  .card .menu1::before {
+    content: "Nouveau";
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    background: #99E2D0;
+    color: green;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 2px; }
+  .card .menu2::before {
+    content: "Nouveau";
+    position: absolute;
+    right: 35px;
+    margin-top: 15px;
+    background: #99E2D0;
+    color: green;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 2px; }
   .card article {
     box-shadow: 0px 5px 5px lightgrey;
     border-radius: 20px; }
