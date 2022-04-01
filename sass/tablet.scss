@@ -1,0 +1,27 @@
+.option__link {
+  width: 500px;
+  margin: auto;
+}
+.card {
+  display: grid;
+
+  .menu1 {
+    grid-area: menu1;
+  }
+
+  .menu2 {
+    grid-area: menu2;
+  }
+
+  .menu3 {
+    grid-area: menu3;
+  }
+
+  .menu4 {
+    grid-area: menu4;
+  }
+
+  grid-template-areas: "header header"
+"menu1 menu2"
+"menu3 menu4";
+}

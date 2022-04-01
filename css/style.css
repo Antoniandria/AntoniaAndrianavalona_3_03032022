@@ -133,14 +133,14 @@ p {
     box-shadow: 0 3px 7px grey; }
 
 .option {
-  padding: 60px 20px;
-  position: relative; }
+  padding: 60px 20px; }
   .option ul {
     padding-left: 10px; }
   .option .option__link {
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(3, 70px); }
+    grid-template-rows: repeat(3, 70px);
+    position: relative; }
     .option .option__link .resto, .option .option__link .menu {
       display: flex;
       padding: 0 40px;
@@ -172,7 +172,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px; }
   .option .option__link li:nth-child(2)::before {
     content: "2";
@@ -184,7 +184,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px; }
   .option .option__link li:nth-child(3)::before {
     content: "3";
@@ -196,7 +196,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px; }
   .option h2 {
     padding-bottom: 20px; }
@@ -206,10 +206,12 @@ p {
   display: grid;
   grid-gap: 20px;
   background: rgba(189, 189, 189, 0.2); }
+  .card .menu1 {
+    position: relative; }
   .card .menu1::before {
     content: "Nouveau";
     position: absolute;
-    right: 35px;
+    right: 15px;
     margin-top: 15px;
     background: #99E2D0;
     color: green;
@@ -219,10 +221,12 @@ p {
     line-height: 30px;
     font-size: 14px;
     border-radius: 2px; }
+  .card .menu2 {
+    position: relative; }
   .card .menu2::before {
     content: "Nouveau";
     position: absolute;
-    right: 35px;
+    right: 15px;
     margin-top: 15px;
     background: #99E2D0;
     color: green;
@@ -252,9 +256,8 @@ p {
   .card .fa-heart {
     position: absolute;
     right: 20px;
-    bottom: 30px;
-    font-size: 22px;
-    font-weight: lighter; }
+    bottom: 20px;
+    font-size: 22px; }
   .card .fa-heart:hover {
     color: linear-gradient(#FF79DA, #9356DC); }
 

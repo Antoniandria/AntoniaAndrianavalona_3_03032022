@@ -47,7 +47,6 @@
 
 .option {
   padding: 60px 20px;
-  position: relative;
   ul {
     padding-left: 10px;
   }
@@ -55,6 +54,7 @@
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(3, 70px);
+      position: relative;
     .resto, .menu {
       display: flex;
       padding: 0 40px;
@@ -91,7 +91,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px;
   }
   .option__link li:nth-child(2)::before {
@@ -104,7 +104,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px;
   }
   .option__link li:nth-child(3)::before {
@@ -117,7 +117,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 17px;
+    left: -1px;
     border-radius: 50px;
   }
   h2 {
@@ -130,33 +130,39 @@
   display: grid;
   grid-gap: 20px;
   background: $background_grey;
-  .menu1::before {
-    content: "Nouveau";
-    position: absolute;
-    right: 35px;
-    margin-top: 15px;
-    background: $green;
-    color: green;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 14px;
-    border-radius: 2px;
+  .menu1 {
+    position: relative;
   }
-  .menu2::before {
-    content: "Nouveau";
-    position: absolute;
-    right: 35px;
-    margin-top: 15px;
-    background: $green;
-    color: green;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 14px;
-    border-radius: 2px;
+    .menu1::before {
+      content: "Nouveau";
+      position: absolute;
+      right: 15px;
+      margin-top: 15px;
+      background: $green;
+      color: green;
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 2px;
+  }
+  .menu2 {
+    position: relative;
+  }
+    .menu2::before {
+      content: "Nouveau";
+      position: absolute;
+      right: 15px;
+      margin-top: 15px;
+      background: $green;
+      color: green;
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 2px;
   }
   article {
     box-shadow: 0px 5px 5px lightgrey;
@@ -185,9 +191,8 @@
   .fa-heart {
     position: absolute;
     right: 20px;
-    bottom: 30px;
+    bottom: 20px;
     font-size: 22px;
-    font-weight: lighter;
   }
   .fa-heart:hover {
     color: linear-gradient($pinky,$purple);
