@@ -1,0 +1,13 @@
+section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+main h1 {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+main section li {
+  height: 140px;
+}

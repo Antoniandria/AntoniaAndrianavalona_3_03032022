@@ -139,8 +139,9 @@ p {
   .option .option__link {
     display: grid;
     grid-gap: 20px;
-    grid-template-rows: repeat(3, 70px);
-    position: relative; }
+    grid-template-rows: repeat(3, 70px); }
+    .option .option__link li {
+      position: relative; }
     .option .option__link .resto, .option .option__link .menu {
       display: flex;
       padding: 0 40px;
@@ -172,7 +173,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px; }
   .option .option__link li:nth-child(2)::before {
     content: "2";
@@ -184,7 +185,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px; }
   .option .option__link li:nth-child(3)::before {
     content: "3";
@@ -196,7 +197,7 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px; }
   .option h2 {
     padding-bottom: 20px; }

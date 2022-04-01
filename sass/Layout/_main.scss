@@ -54,7 +54,9 @@
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(3, 70px);
-      position: relative;
+      li {
+        position: relative;
+      }
     .resto, .menu {
       display: flex;
       padding: 0 40px;
@@ -91,7 +93,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px;
   }
   .option__link li:nth-child(2)::before {
@@ -104,7 +106,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px;
   }
   .option__link li:nth-child(3)::before {
@@ -117,7 +119,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -1px;
+    left: -10px;
     border-radius: 50px;
   }
   h2 {
