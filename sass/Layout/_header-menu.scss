@@ -1,14 +1,22 @@
 .header {
   display: flex;
-  justify-content: space-between;
-  margin: 10px 30px 0 20px;
-  .header__link {
-    padding-top: 20px ;
-    color: black;
-  }
+  justify-content: center;
+  box-shadow: 0px 2px 5px gray;
+  height: 65px;
+  align-items: center;
+  position: relative;
   .header__title {
-    margin: 10px auto;
-    color: black;
-    font-family: Shrikhand;
+    text-align: center;
+    h1 {
+      color: black;
+      font-family: Shrikhand;
+    }
   }
+  .header__link {
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+    color: black;
+  }
+
 }

@@ -2,40 +2,47 @@ main {
   background: $background_menu;
   padding-bottom: 50px;
   header {
-    padding-bottom: 0;
+    position: relative;
+    margin-bottom: 30px;
     img {
-      height: 240px;
+      height: 300px;
       object-fit: cover;
+      object-position: top;
     }
   }
   h1 {
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 40px 0 0;
     display: flex;
+    background: $background_menu;
+    margin-top: -60px;
     justify-content: space-between;
     font-family: Shrikhand;
     padding: 30px 30px 20px 20px;
+    position: absolute;
+    width: 100%;
     i {
       font-size: 22px;
-      padding-top: 5px;
-    }
-    i:checked {
-      color: linear-gradient ($pinky,$purple);
+      padding-top: 10px;
     }
   }
   section {
-    padding: 10px;
+    padding: 15px;
+    margin-top: 10px;
     ul {
       display: grid;
-      grid-gap: 5px;
     }
     h5 {
       font-weight: normal;
       padding-left: 5px;
     }
-    .border_bottom {
-      margin: 5px;
-      border-top: solid 3px $green;
-      width: 45px;
+    h5::after {
+      content: "";
+      width: 40px;
+      height: 3px;
+      background-color: $green;
+      display: block;
+      margin-top: 5px;
+
     }
     li {
       margin-top: 15px;
