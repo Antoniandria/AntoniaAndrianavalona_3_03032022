@@ -121,16 +121,6 @@ p {
     font-weight: lighter;
     text-align: center;
     padding: 0 20px 20px; }
-  .main button {
-    display: block;
-    margin: auto;
-    width: 220px;
-    padding: 15px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 0 3px 7px grey; }
 
 .option {
   padding: 60px 20px; }
@@ -260,5 +250,17 @@ p {
     flex-direction: column; }
   .footer .fas {
     width: 25px; }
+
+button {
+  display: block;
+  margin: auto;
+  width: 220px;
+  padding: 15px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 3px 7px grey;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

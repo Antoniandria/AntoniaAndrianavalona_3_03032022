@@ -1,0 +1,12 @@
+button {
+  display: block;
+  margin: auto;
+  width: 220px;
+  padding: 15px;
+  color: $color_white;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient($pinky, $purple);
+  box-shadow: 0 3px 7px grey;
+  cursor: pointer;
+}

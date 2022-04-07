@@ -59,11 +59,14 @@ main {
       box-shadow: 0 3px 5px lightgray;
       padding: 10px;
       position: relative;
-
       span {
         font-weight: lighter;
+        width: 260px;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
-
       p {
         position: absolute;
         bottom: 10px;
@@ -72,16 +75,4 @@ main {
     }
   }
 
-  button {
-    display: block;
-    margin: 40px auto;
-    width: 220px;
-    padding: 15px;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 0 3px 7px grey;
-    cursor: pointer;
-  }
 }
