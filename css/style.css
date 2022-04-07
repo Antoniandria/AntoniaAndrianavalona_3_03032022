@@ -173,7 +173,8 @@ p {
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -10px;
+    left: 0px;
+    transform: translateX(-50%);
     border-radius: 50px; }
   .option .option__link li:nth-child(2)::before {
     content: "2";
@@ -207,60 +208,44 @@ p {
   display: grid;
   grid-gap: 20px;
   background: rgba(189, 189, 189, 0.2); }
-  .card .menu1 {
-    position: relative; }
-  .card .menu1::before {
-    content: "Nouveau";
-    position: absolute;
-    right: 15px;
-    margin-top: 15px;
-    background: #99E2D0;
-    color: green;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 14px;
-    border-radius: 2px; }
-  .card .menu2 {
-    position: relative; }
-  .card .menu2::before {
-    content: "Nouveau";
-    position: absolute;
-    right: 15px;
-    margin-top: 15px;
-    background: #99E2D0;
-    color: green;
-    width: 80px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
-    font-size: 14px;
-    border-radius: 2px; }
   .card article {
     box-shadow: 0px 5px 5px lightgrey;
     border-radius: 20px; }
-  .card img {
-    height: 180px;
-    margin: auto;
-    object-fit: cover;
-    object-position: bottom;
-    border-radius: 20px 20px 0 0; }
-  .card figcaption {
-    position: relative;
-    padding: 15px;
-    color: black;
-    background: white;
-    border-radius: 0 0 20px 20px; }
-    .card figcaption p {
-      font-weight: lighter; }
-  .card .fa-heart {
+    .card article figure {
+      position: relative; }
+      .card article figure img {
+        height: 45vw;
+        margin: auto;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 20px 20px 0 0; }
+      .card article figure figcaption {
+        position: relative;
+        padding: 15px;
+        color: black;
+        background: white;
+        border-radius: 0 0 20px 20px; }
+        .card article figure figcaption p {
+          font-weight: lighter; }
+        .card article figure figcaption .fa-heart {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          font-size: 22px; }
+        .card article figure figcaption .fa-heart:hover {
+          color: linear-gradient(#FF79DA, #9356DC); }
+  .card .menu1 figure::before, .card .menu2 figure::before {
+    content: "Nouveau";
     position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 22px; }
-  .card .fa-heart:hover {
-    color: linear-gradient(#FF79DA, #9356DC); }
+    right: 15px;
+    top: 15px;
+    background: #99E2D0;
+    color: green;
+    padding: 3px 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    border-radius: 2px; }
 
 .footer {
   padding: 20px;

@@ -9,9 +9,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
+  grid-template-areas:
+        "header header header header"
+        "menu1 menu2 menu3 menu4";
   h2 {
     padding-bottom: 10px;
     grid-column-start: 1;
     grid-column-end: 5;
   }
+}
+.option__link {
+  width: 100%;
 }

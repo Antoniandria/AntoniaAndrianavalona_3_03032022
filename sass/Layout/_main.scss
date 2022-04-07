@@ -1,6 +1,7 @@
 .main {
   padding-bottom: 50px;
   background: $background_grey;
+
   label {
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@
     align-items: center;
     background: $grey_label;
   }
+
   input {
     align-content: center;
     padding-left: 15px;
@@ -16,22 +18,26 @@
     background: transparent;
     border: none;
   }
+
   h2 {
     text-align: center;
     margin: 30px 70px auto;
     padding-bottom: 10px;
   }
+
   h3 {
     text-align: center;
 
     margin-top: 20px;
     margin-bottom: 30px;
   }
+
   p {
     font-weight: lighter;
     text-align: center;
     padding: 0 20px 20px;
   }
+
   button {
     display: block;
     margin: auto;
@@ -40,23 +46,27 @@
     color: $color_white;
     border: none;
     border-radius: 25px;
-    background: linear-gradient($pinky,$purple);
+    background: linear-gradient($pinky, $purple);
     box-shadow: 0 3px 7px grey;
   }
 }
 
 .option {
   padding: 60px 20px;
+
   ul {
     padding-left: 10px;
   }
-    .option__link {
+
+  .option__link {
     display: grid;
     grid-gap: 20px;
     grid-template-rows: repeat(3, 70px);
-      li {
-        position: relative;
-      }
+
+    li {
+      position: relative;
+    }
+
     .resto, .menu {
       display: flex;
       padding: 0 40px;
@@ -64,25 +74,29 @@
       background: $background_grey;
       border-radius: 20px;
       box-shadow: 0 3px 10px lightgray;
+
       .fas {
         width: 40px;
         font-size: 18px;
       }
     }
-      .eat {
-        display: flex;
-        padding: 0 40px;
-        align-items: center;
-        background: rgba(195,154,243,0.24);
-        border-radius: 20px;
-        box-shadow: 0 3px 10px lightgray;
-        .fas {
-          width: 40px;
-          font-size: 18px;
-          color: $purple
-        }
+
+    .eat {
+      display: flex;
+      padding: 0 40px;
+      align-items: center;
+      background: rgba(195, 154, 243, 0.24);
+      border-radius: 20px;
+      box-shadow: 0 3px 10px lightgray;
+
+      .fas {
+        width: 40px;
+        font-size: 18px;
+        color: $purple
       }
     }
+  }
+
   .option__link li:nth-child(1)::before {
     content: "1";
     color: white;
@@ -93,9 +107,11 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: -10px;
+    left: 0px;
+    transform: translateX(-50%);
     border-radius: 50px;
   }
+
   .option__link li:nth-child(2)::before {
     content: "2";
     color: white;
@@ -109,6 +125,7 @@
     left: -10px;
     border-radius: 50px;
   }
+
   .option__link li:nth-child(3)::before {
     content: "3";
     color: white;
@@ -122,6 +139,7 @@
     left: -10px;
     border-radius: 50px;
   }
+
   h2 {
     padding-bottom: 20px;
   }
@@ -132,71 +150,60 @@
   display: grid;
   grid-gap: 20px;
   background: $background_grey;
-  .menu1 {
-    position: relative;
-  }
-    .menu1::before {
-      content: "Nouveau";
-      position: absolute;
-      right: 15px;
-      margin-top: 15px;
-      background: $green;
-      color: green;
-      width: 80px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 14px;
-      border-radius: 2px;
-  }
-  .menu2 {
-    position: relative;
-  }
-    .menu2::before {
-      content: "Nouveau";
-      position: absolute;
-      right: 15px;
-      margin-top: 15px;
-      background: $green;
-      color: green;
-      width: 80px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
-      font-size: 14px;
-      border-radius: 2px;
-  }
+
   article {
     box-shadow: 0px 5px 5px lightgrey;
     border-radius: 20px;
-  }
-  img {
-    height: 180px;
-    margin: auto;
-    object-fit: cover;
-    object-position: bottom;
-    border-radius: 20px 20px 0 0;
-  }
 
-  figcaption {
-    p {
-      font-weight: lighter;
+    figure {
+      position: relative;
+
+      img {
+        height: 45vw;
+        margin: auto;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 20px 20px 0 0;
+      }
+
+      figcaption {
+        p {
+          font-weight: lighter;
+        }
+
+        position: relative;
+        padding: 15px;
+        color: black;
+        background: white;
+        border-radius: 0 0 20px 20px;
+
+        .fa-heart {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          font-size: 22px;
+        }
+
+        .fa-heart:hover {
+          color: linear-gradient($pinky, $purple);
+        }
+      }
     }
-    position: relative;
-    padding: 15px;
-    color: black;
-    background: white;
-    border-radius: 0 0 20px 20px;
-
   }
 
-  .fa-heart {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 22px;
-  }
-  .fa-heart:hover {
-    color: linear-gradient($pinky,$purple);
+  .menu1, .menu2 {
+    figure::before {
+      content: "Nouveau";
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      background: $green;
+      color: green;
+      padding: 3px 10px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 14px;
+      border-radius: 2px;
+    }
   }
 }
