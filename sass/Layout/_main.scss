@@ -164,15 +164,11 @@
         background: white;
         border-radius: 0 0 20px 20px;
 
-        .fa-heart {
+        .fa-heart{
           position: absolute;
           right: 20px;
-          bottom: 20px;
+          bottom: 35px;
           font-size: 22px;
-        }
-
-        .fa-heart:hover {
-          color: linear-gradient($pinky, $purple);
         }
       }
     }

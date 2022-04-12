@@ -4,14 +4,35 @@ section {
 }
 section ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: center;
   grid-gap: 10px;
+  animation: animation 1000ms;
 }
-main h1 {
-  display: flex;
-  justify-content: end;
-  gap: 20px;
+main section li span {
+  width:auto;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main section li h3 {
+  width:auto;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main section li {
-  height: 140px;
+    height: 140px;
+  }
+@keyframes animation {
+  from {
+    transform: translateY(15px);
+    opacity:0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

@@ -220,10 +220,8 @@ p {
         .card article figure figcaption .fa-heart {
           position: absolute;
           right: 20px;
-          bottom: 20px;
+          bottom: 35px;
           font-size: 22px; }
-        .card article figure figcaption .fa-heart:hover {
-          color: linear-gradient(#FF79DA, #9356DC); }
   .card .menu1 figure::before, .card .menu2 figure::before {
     content: "Nouveau";
     position: absolute;
