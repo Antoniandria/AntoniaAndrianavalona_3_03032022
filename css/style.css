@@ -90,7 +90,7 @@ body {
     opacity: 0.9;
     position: fixed;
     z-index: 1;
-    animation: loading 1s forwards;
+    animation: loading 10ms forwards;
     animation-delay: 3s; }
   body .loader div {
     display: inline-block;
@@ -110,7 +110,6 @@ body {
     background: #FF79DA; }
   body .loader div:nth-child(3) {
     left: 56px;
-    animation-delay: 0;
     background: #9356DC; }
 
 .header {
@@ -174,6 +173,9 @@ body {
       .option .option__link .resto .fas, .option .option__link .menu .fas {
         width: 40px;
         font-size: 18px; }
+    .option .option__link .resto:hover, .option .option__link .menu:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey; }
     .option .option__link .eat {
       display: flex;
       padding: 0 40px;
@@ -185,6 +187,9 @@ body {
         width: 40px;
         font-size: 18px;
         color: #9356DC; }
+    .option .option__link .eat:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey; }
   .option .option__link li:nth-child(1)::before {
     content: "1";
     color: white;
@@ -254,6 +259,9 @@ body {
           right: 20px;
           bottom: 35px;
           font-size: 22px; }
+  .card article:hover {
+    opacity: 0.6;
+    box-shadow: 0px 5px 5px darkgrey; }
   .card .menu1 figure::before, .card .menu2 figure::before {
     content: "Nouveau";
     position: absolute;
@@ -290,8 +298,12 @@ button {
   border: none;
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0 3px 7px grey;
+  box-shadow: 0 3px 7px lightgray;
   cursor: pointer; }
+
+button:hover {
+  opacity: 0.6;
+  box-shadow: 0 5px 5px grey; }
 
 @keyframes animation {
   from {
@@ -337,8 +349,8 @@ button {
     height: 32px; } }
 @keyframes loading {
   0% {
-    opacity: 0.9; }
+    transform: scale 1; }
   100% {
-    opacity: 0; } }
+    transform: scale(0); } }
 
 /*# sourceMappingURL=style.css.map */

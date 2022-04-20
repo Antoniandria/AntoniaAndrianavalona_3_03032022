@@ -7,6 +7,10 @@ button {
   border: none;
   border-radius: 25px;
   background: linear-gradient($pinky, $purple);
-  box-shadow: 0 3px 7px grey;
+  box-shadow: 0 3px 7px lightgray;
   cursor: pointer;
+}
+button:hover {
+  opacity: 0.6;
+  box-shadow: 0 5px 5px grey;
 }
