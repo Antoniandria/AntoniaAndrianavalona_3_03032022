@@ -25,14 +25,5 @@ main section li h3 {
 }
 main section li {
     height: 140px;
-  }
-@keyframes animation {
-  from {
-    transform: translateY(15px);
-    opacity:0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
+

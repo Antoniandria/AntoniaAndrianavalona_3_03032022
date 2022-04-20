@@ -11,12 +11,13 @@ main {
       object-fit: cover;
       object-position: center;
     }
+
     .fa-heart {
-        position: absolute;
-        right: 50px;
-        bottom: 30px;
-        font-size: 25px;
-        cursor: pointer;
+      position: absolute;
+      right: 50px;
+      bottom: 30px;
+      font-size: 25px;
+      cursor: pointer;
     }
   }
 
@@ -28,12 +29,12 @@ main {
     padding: 30px 30px 20px 20px;
     position: relative;
     width: 100%;
+
     i {
       font-size: 22px;
       padding-top: 10px;
     }
   }
-
 
 
   section {
@@ -42,15 +43,19 @@ main {
     ul {
       display: grid;
     }
+
     ul li:nth-child(1) {
       animation: animation 1000ms;
     }
+
     ul li:nth-child(2) {
       animation: animation 1500ms;
     }
+
     ul li:nth-child(3) {
       animation: animation 2000ms;
     }
+
     ul li:nth-child(4) {
       animation: animation 2500ms;
     }
@@ -67,7 +72,6 @@ main {
       background-color: $green;
       display: block;
       margin-top: 5px;
-
     }
 
     li {
@@ -77,26 +81,29 @@ main {
       box-shadow: 0 3px 5px lightgray;
       padding: 10px;
       position: relative;
+      overflow: hidden;
+
       &:hover {
         p {
           position: absolute;
           bottom: 10px;
-          right: 70px;
+          right: 60px;
           transition: 0.5s;
         }
+
         .check {
+          /*
           display: flex;
-          right: 0;
-          top: 0;
-          justify-content: center;
-          align-items: center;
-          width: 18%;
-          height: 100%;
-          color: white;
-          font-size: 20px;
-          background-color: $green;
-          border-radius: 0 15px 15px 0;
-          animation: check 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+          width: 70px;*/
+          animation: check 0.5s linear forwards;
+
+          .fa-check-circle {
+            animation: rotate-check 0.5s ease-in-out both;
+          }
+        }
+        span, h3 {
+          width: calc (100% -70px);
+          padding-right: 60px;
         }
       }
 
@@ -108,6 +115,7 @@ main {
         white-space: nowrap;
         text-overflow: ellipsis;
       }
+
       p {
         position: absolute;
         bottom: 10px;
@@ -118,14 +126,25 @@ main {
         display: flex;
         align-items: end;
       }
+
       .check {
         position: absolute;
         cursor: pointer;
-        display: none;
+        display: flex;
+        right: 0;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        color: white;
+        font-size: 20px;
+        background-color: $green;
+        border-radius: 0 15px 15px 0;
+
       }
-      .fa-check-circle {
-          animation: rotate-check 0.5s ease-in-out both;
-        }
+
     }
   }
 
