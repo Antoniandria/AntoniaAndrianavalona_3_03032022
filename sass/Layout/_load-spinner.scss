@@ -3,10 +3,12 @@ body {
   .loader {
     height: 100%;
     width: 100%;
-    background-color: white;
-    opacity: 0.8;
+    background-color: grey;
+    opacity: 0.9;
     position: fixed;
     z-index: 1;
+    animation: loading 1s forwards;
+    animation-delay: 3s;
   }
   .loader div {
     display: inline-block;
