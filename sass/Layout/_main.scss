@@ -55,7 +55,7 @@
       position: relative;
     }
 
-    .resto, .menu {
+    .resto, .menu, .eat {
       display: flex;
       padding: 0 40px;
       align-items: center;
@@ -68,28 +68,18 @@
         font-size: 18px;
       }
     }
-    .resto:hover, .menu:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey;
-    }
-
-    .eat {
-      display: flex;
-      padding: 0 40px;
-      align-items: center;
-      background: rgba(195, 154, 243, 0.24);
-      border-radius: 20px;
-      box-shadow: 0 3px 10px lightgray;
-
-      .fas {
-        width: 40px;
-        font-size: 18px;
-        color: $purple
-      }
-    }
-    .eat:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey;
+    .resto:hover, .menu:hover, .eat:hover {
+        display: flex;
+        padding: 0 40px;
+        align-items: center;
+        background: rgba(195, 154, 243, 0.24);
+        border-radius: 20px;
+        box-shadow: 0 3px 10px darkgrey;
+        .fas {
+          width: 40px;
+          font-size: 18px;
+          color: $purple
+        }
     }
   }
 
@@ -177,15 +167,14 @@
           right: 20px;
           bottom: 35px;
           font-size: 22px;
+
         }
       }
     }
   }
   article:hover {
-    opacity: 0.6;
     box-shadow: 0px 5px 5px darkgrey;
   }
-
   .menu1, .menu2 {
     figure::before {
       content: "Nouveau";
@@ -200,5 +189,20 @@
       font-size: 14px;
       border-radius: 2px;
     }
+  }
+  .like {
+    .fas {
+      opacity: 0;
+      background: -webkit-linear-gradient($purple,$pinky);
+      background: linear-gradient($purple,$pinky);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color:transparent;
+    }
+  }
+  .fas:active {
+    right:19.5px;
+    font-size: 23px;
+    animation: heart 400ms forwards;
   }
 }

@@ -96,7 +96,7 @@ body {
     display: inline-block;
     position: absolute;
     margin-left: calc(90%/2);
-    margin-top: calc(80%/2);
+    margin-top: calc(50%/2);
     left: 8px;
     width: 16px;
     animation: load 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite; }
@@ -163,33 +163,27 @@ body {
     grid-template-rows: repeat(3, 70px); }
     .option .option__link li {
       position: relative; }
-    .option .option__link .resto, .option .option__link .menu {
+    .option .option__link .resto, .option .option__link .menu, .option .option__link .eat {
       display: flex;
       padding: 0 40px;
       align-items: center;
       background: rgba(189, 189, 189, 0.2);
       border-radius: 20px;
       box-shadow: 0 3px 10px lightgray; }
-      .option .option__link .resto .fas, .option .option__link .menu .fas {
+      .option .option__link .resto .fas, .option .option__link .menu .fas, .option .option__link .eat .fas {
         width: 40px;
         font-size: 18px; }
-    .option .option__link .resto:hover, .option .option__link .menu:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey; }
-    .option .option__link .eat {
+    .option .option__link .resto:hover, .option .option__link .menu:hover, .option .option__link .eat:hover {
       display: flex;
       padding: 0 40px;
       align-items: center;
       background: rgba(195, 154, 243, 0.24);
       border-radius: 20px;
-      box-shadow: 0 3px 10px lightgray; }
-      .option .option__link .eat .fas {
+      box-shadow: 0 3px 10px darkgrey; }
+      .option .option__link .resto:hover .fas, .option .option__link .menu:hover .fas, .option .option__link .eat:hover .fas {
         width: 40px;
         font-size: 18px;
         color: #9356DC; }
-    .option .option__link .eat:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey; }
   .option .option__link li:nth-child(1)::before {
     content: "1";
     color: white;
@@ -260,7 +254,6 @@ body {
           bottom: 35px;
           font-size: 22px; }
   .card article:hover {
-    opacity: 0.6;
     box-shadow: 0px 5px 5px darkgrey; }
   .card .menu1 figure::before, .card .menu2 figure::before {
     content: "Nouveau";
@@ -274,6 +267,17 @@ body {
     line-height: 30px;
     font-size: 14px;
     border-radius: 2px; }
+  .card .like .fas {
+    opacity: 0;
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .card .fas:active {
+    right: 19.5px;
+    font-size: 23px;
+    animation: heart 400ms forwards; }
 
 .footer {
   padding: 20px;
@@ -349,8 +353,18 @@ button:hover {
     height: 32px; } }
 @keyframes loading {
   0% {
-    transform: scale 1; }
+    transform: scale(1); }
   100% {
     transform: scale(0); } }
+@keyframes heart {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes heart-active {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
 
 /*# sourceMappingURL=style.css.map */
