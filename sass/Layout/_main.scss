@@ -55,31 +55,39 @@
       position: relative;
     }
 
-    .resto, .menu, .eat {
+    .resto, .menu {
       display: flex;
       padding: 0 40px;
       align-items: center;
       background: $background_grey;
       border-radius: 20px;
       box-shadow: 0 3px 10px lightgray;
-
       .fas {
         width: 40px;
         font-size: 18px;
       }
     }
-    .resto:hover, .menu:hover, .eat:hover {
-        display: flex;
-        padding: 0 40px;
-        align-items: center;
-        background: rgba(195, 154, 243, 0.24);
-        border-radius: 20px;
-        box-shadow: 0 3px 10px darkgrey;
-        .fas {
-          width: 40px;
-          font-size: 18px;
-          color: $purple
-        }
+
+    .resto:hover, .menu:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey;
+    }
+    .eat {
+      display: flex;
+      padding: 0 40px;
+      align-items: center;
+      background: rgba(195, 154, 243, 0.24);
+      border-radius: 20px;
+      box-shadow: 0 3px 10px lightgray;
+      .fas {
+        width: 40px;
+        font-size: 18px;
+        color: $purple
+      }
+    }
+    .eat:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey;
     }
   }
 
@@ -194,7 +202,7 @@
     .fas {
       opacity: 0;
       background: -webkit-linear-gradient($purple,$pinky);
-      background: linear-gradient($purple,$pinky);
+      background: radial-gradient($purple,$pinky);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color:transparent;

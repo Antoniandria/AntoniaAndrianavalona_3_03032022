@@ -14,7 +14,7 @@ main {
 
     .fa-heart {
       position: absolute;
-      right: 50px;
+      right: 20px;
       bottom: 30px;
       font-size: 25px;
       cursor: pointer;
@@ -23,7 +23,7 @@ main {
       .fas {
       opacity: 0;
         background: -webkit-linear-gradient($purple,$pinky);
-        background: linear-gradient($purple,$pinky);
+        background: radial-gradient($purple,$pinky);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color:transparent;
@@ -31,16 +31,10 @@ main {
     }
     .fas:active {
       font-size: 26.5px;
-      right:49.5px;
+      right:19.5px;
       bottom: 29px;
       animation: heart 300ms forwards;
     }
-    /*
-    .fas:checked {
-      transform: scale(0);
-      animation: heart-active forwards;
-      animation-iteration-count: infinite;
-    }*/
   }
 
   h1 {
@@ -48,7 +42,7 @@ main {
     background: $background_menu;
     margin-top: -60px;
     font-family: Shrikhand;
-    padding: 30px 30px 20px 20px;
+    padding: 30px 30px 20px 10px;
     position: relative;
     width: 100%;
 
@@ -114,9 +108,6 @@ main {
         }
 
         .check {
-          /*
-          display: flex;
-          width: 70px;*/
           animation: check 0.5s linear forwards;
 
           .fa-check-circle {
@@ -124,11 +115,15 @@ main {
           }
         }
         span, h3 {
-          width: calc (100% -70px);
-          padding-right: 0px;
+          width: calc(100% - 70px);
+          padding-right: 20px;
         }
       }
-
+      h3 {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
       span {
         font-weight: lighter;
         width: 260px;

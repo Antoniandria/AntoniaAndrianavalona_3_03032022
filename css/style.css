@@ -81,6 +81,16 @@ h5 {
 p {
   font-size: 1rem; }
 
+:root {
+  --purple: #9356DC;
+  --pinky: #FF79DA;
+  --green: #99E2D0;
+  --logo_black: black;
+  --color_white: white;
+  --grey_label: rgba(204, 204, 204, 0.42);
+  --background_grey: rgba(189, 189, 189, 0.2);
+  --background_menu: whitesmoke; }
+
 body {
   position: relative; }
   body .loader {
@@ -103,14 +113,14 @@ body {
   body .loader div:nth-child(1) {
     left: 8px;
     animation-delay: -0.24s;
-    background: #99E2D0; }
+    background: var(--green); }
   body .loader div:nth-child(2) {
     left: 32px;
     animation-delay: -0.12s;
-    background: #FF79DA; }
+    background: var(--pinky); }
   body .loader div:nth-child(3) {
     left: 56px;
-    background: #9356DC; }
+    background: var(--purple); }
 
 .header {
   display: flex;
@@ -163,27 +173,33 @@ body {
     grid-template-rows: repeat(3, 70px); }
     .option .option__link li {
       position: relative; }
-    .option .option__link .resto, .option .option__link .menu, .option .option__link .eat {
+    .option .option__link .resto, .option .option__link .menu {
       display: flex;
       padding: 0 40px;
       align-items: center;
       background: rgba(189, 189, 189, 0.2);
       border-radius: 20px;
       box-shadow: 0 3px 10px lightgray; }
-      .option .option__link .resto .fas, .option .option__link .menu .fas, .option .option__link .eat .fas {
+      .option .option__link .resto .fas, .option .option__link .menu .fas {
         width: 40px;
         font-size: 18px; }
-    .option .option__link .resto:hover, .option .option__link .menu:hover, .option .option__link .eat:hover {
+    .option .option__link .resto:hover, .option .option__link .menu:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey; }
+    .option .option__link .eat {
       display: flex;
       padding: 0 40px;
       align-items: center;
       background: rgba(195, 154, 243, 0.24);
       border-radius: 20px;
-      box-shadow: 0 3px 10px darkgrey; }
-      .option .option__link .resto:hover .fas, .option .option__link .menu:hover .fas, .option .option__link .eat:hover .fas {
+      box-shadow: 0 3px 10px lightgray; }
+      .option .option__link .eat .fas {
         width: 40px;
         font-size: 18px;
         color: #9356DC; }
+    .option .option__link .eat:hover {
+      opacity: 0.6;
+      box-shadow: 0 5px 10px darkgrey; }
   .option .option__link li:nth-child(1)::before {
     content: "1";
     color: white;
@@ -270,7 +286,7 @@ body {
   .card .like .fas {
     opacity: 0;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
-    background: linear-gradient(#9356DC, #FF79DA);
+    background: radial-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }

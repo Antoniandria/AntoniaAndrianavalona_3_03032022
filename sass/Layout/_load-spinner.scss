@@ -22,15 +22,15 @@ body {
   .loader div:nth-child(1) {
     left: 8px;
     animation-delay: -0.24s;
-    background: $green;
+    background: var(--green);
   }
   .loader div:nth-child(2) {
     left: 32px;
     animation-delay: -0.12s;
-    background: $pinky;
+    background: var(--pinky);
   }
   .loader div:nth-child(3) {
     left: 56px;
-    background: $purple;
+    background: var(--purple);
   }
 }
