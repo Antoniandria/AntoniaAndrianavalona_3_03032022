@@ -105,22 +105,20 @@ body {
   body .loader div {
     display: inline-block;
     position: absolute;
-    margin-left: calc(90%/2);
+    height: 80px;
+    width: 80px; }
+  body .loader:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
     margin-top: calc(50%/2);
-    left: 8px;
-    width: 16px;
-    animation: load 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite; }
-  body .loader div:nth-child(1) {
-    left: 8px;
-    animation-delay: -0.24s;
-    background: var(--green); }
-  body .loader div:nth-child(2) {
-    left: 32px;
-    animation-delay: -0.12s;
-    background: var(--pinky); }
-  body .loader div:nth-child(3) {
-    left: 56px;
-    background: var(--purple); }
+    margin-left: calc(90%/2);
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff #FF79DA #9356DC #99E2D0;
+    animation: loader 1.2s infinite; }
 
 .header {
   display: flex;
@@ -290,7 +288,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent; }
-  .card .fas:active {
+  .card .fas:hover {
     right: 19.5px;
     font-size: 23px;
     animation: heart 400ms forwards; }
@@ -360,13 +358,15 @@ button:hover {
   100% {
     transform: scaleY(1);
     transform-origin: 0% 100%; } }
-@keyframes load {
+@keyframes loader {
   0% {
-    top: 8px;
-    height: 64px; }
-  50%, 100% {
-    top: 24px;
-    height: 32px; } }
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  100% {
+    transform: rotate(1800deg); } }
 @keyframes loading {
   0% {
     transform: scale(1); }

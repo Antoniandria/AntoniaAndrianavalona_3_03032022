@@ -13,24 +13,20 @@ body {
   .loader div {
     display: inline-block;
     position: absolute;
-    margin-left: calc(90%/2);
+    height: 80px;
+    width: 80px;
+  }
+  .loader:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
     margin-top: calc(50%/2);
-    left: 8px;
-    width: 16px;
-    animation: load 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  }
-  .loader div:nth-child(1) {
-    left: 8px;
-    animation-delay: -0.24s;
-    background: var(--green);
-  }
-  .loader div:nth-child(2) {
-    left: 32px;
-    animation-delay: -0.12s;
-    background: var(--pinky);
-  }
-  .loader div:nth-child(3) {
-    left: 56px;
-    background: var(--purple);
+    margin-left: calc(90%/2);
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: #fff $pinky $purple $green;
+    animation: loader 1.2s infinite;
   }
 }
