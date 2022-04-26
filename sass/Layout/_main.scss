@@ -101,7 +101,7 @@
     line-height: 24px;
     position: absolute;
     text-align: center;
-    left: 0px;
+    left: 0;
     transform: translateX(-50%);
     border-radius: 50px;
   }
@@ -146,7 +146,7 @@
   background: $background_grey;
 
   article {
-    box-shadow: 0px 5px 5px lightgrey;
+    box-shadow: 0 5px 5px lightgrey;
     border-radius: 20px;
 
     figure {
@@ -181,7 +181,8 @@
     }
   }
   article:hover {
-    box-shadow: 0px 5px 5px darkgrey;
+    filter: contrast(120%);
+    box-shadow: 0 5px 10px darkgrey;
   }
   .menu1, .menu2 {
     figure::before {
@@ -204,8 +205,7 @@
       background: -webkit-linear-gradient($purple,$pinky);
       background: radial-gradient($purple,$pinky);
       -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color:transparent;
+      -webkit-text-fill-color: transparent;
     }
   }
   .fas:hover {

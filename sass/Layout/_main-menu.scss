@@ -25,8 +25,7 @@ main {
         background: -webkit-linear-gradient($purple,$pinky);
         background: radial-gradient($purple,$pinky);
         -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
+        -webkit-text-fill-color: transparent;
       }
     }
     .fas:hover {
@@ -108,7 +107,7 @@ main {
         }
 
         .check {
-          animation: check 0.5s linear forwards;
+          animation: check 0.5s linear both;
 
           .fa-check-circle {
             animation: rotate-check 0.5s;
