@@ -14,9 +14,9 @@ main {
 
     .fa-heart {
       position: absolute;
-      right: 20px;
+      right: 10px;
       bottom: 30px;
-      font-size: 25px;
+      font-size: 20px;
       cursor: pointer;
     }
     .like {
@@ -29,10 +29,10 @@ main {
       }
     }
     .fas:hover {
-      font-size: 26.5px;
-      right:19.5px;
+      font-size: 21px;
+      right:9.7px;
       bottom: 29px;
-      animation: heart 300ms forwards;
+      animation: heart 380ms forwards;
     }
   }
 
