@@ -1,0 +1,19 @@
+.option__link {
+  width: 340px;
+  margin: auto; }
+
+.card {
+  display: grid;
+  grid-template-areas: "header header" "menu1 menu2" "menu3 menu4"; }
+  .card .menu1 {
+    grid-area: menu1; }
+  .card .menu2 {
+    grid-area: menu2; }
+  .card .menu3 {
+    grid-area: menu3; }
+  .card .menu4 {
+    grid-area: menu4; }
+  .card article figure img {
+    height: 25vw; }
+
+/*# sourceMappingURL=tablet.css.map */

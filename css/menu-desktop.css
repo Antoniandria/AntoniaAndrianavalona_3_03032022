@@ -1,0 +1,29 @@
+section {
+  width: 100%;
+  margin: auto; }
+
+section ul {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: center;
+  grid-gap: 10px;
+  animation: animation 1000ms; }
+
+main section li span {
+  width: auto;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+main section li h3 {
+  width: auto;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+main section li {
+  height: 140px; }
+
+/*# sourceMappingURL=menu-desktop.css.map */
