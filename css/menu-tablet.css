@@ -2,4 +2,8 @@ section {
   width: 430px;
   margin: auto; }
 
+main h1 {
+  justify-content: center;
+  display: flex; }
+
 /*# sourceMappingURL=menu-tablet.css.map */

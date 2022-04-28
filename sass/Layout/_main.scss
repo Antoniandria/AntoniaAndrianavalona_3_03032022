@@ -68,10 +68,6 @@
       }
     }
 
-    .resto:hover, .menu:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey;
-    }
     .eat {
       display: flex;
       padding: 0 40px;
@@ -84,10 +80,6 @@
         font-size: 18px;
         color: $purple
       }
-    }
-    .eat:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey;
     }
   }
 

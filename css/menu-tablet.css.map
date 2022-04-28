@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,OAAQ;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI",
+"mappings": "AAAA,OAAQ;EACN,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,IAAI;;AAEd,OAAQ;EACN,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,IAAI",
 "sources": ["../sass/menu-tablet.scss"],
 "names": [],
 "file": "menu-tablet.css"

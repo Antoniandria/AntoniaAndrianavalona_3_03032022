@@ -16,6 +16,10 @@ main section li span {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
+main h1 {
+  justify-content: center;
+  display: flex; }
+
 main section li h3 {
   width: auto;
   display: block;

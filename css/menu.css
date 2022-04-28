@@ -131,11 +131,9 @@ main {
     background: whitesmoke;
     margin-top: -60px;
     font-family: Shrikhand;
-    padding: 30px 30px 20px 10px;
+    padding: 30px 30px 20px 20px;
     position: relative;
-    width: 100%;
-    justify-content: center;
-    display: flex; }
+    width: 100%; }
     main h1 i {
       font-size: 22px;
       padding-top: 10px; }
@@ -175,7 +173,7 @@ main {
         right: 60px;
         transition: 0.5s; }
       main section li:hover .check {
-        animation: check 0.5s linear both; }
+        animation: check 0.5s linear forwards; }
         main section li:hover .check .fa-check-circle {
           animation: rotate-check 0.5s; }
       main section li:hover span, main section li:hover h3 {

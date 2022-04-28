@@ -103,8 +103,7 @@ body {
     border-radius: 50%;
     width: 0;
     height: 0;
-    margin-top: calc(50%/2);
-    margin-left: calc(95%/2);
+    margin: 250px auto;
     box-sizing: border-box;
     border: 32px solid #fff;
     border-color: #fff #FF79DA #9356DC #99E2D0;
@@ -171,9 +170,6 @@ body {
       .option .option__link .resto .fas, .option .option__link .menu .fas {
         width: 40px;
         font-size: 18px; }
-    .option .option__link .resto:hover, .option .option__link .menu:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey; }
     .option .option__link .eat {
       display: flex;
       padding: 0 40px;
@@ -185,9 +181,6 @@ body {
         width: 40px;
         font-size: 18px;
         color: #9356DC; }
-    .option .option__link .eat:hover {
-      opacity: 0.6;
-      box-shadow: 0 5px 10px darkgrey; }
   .option .option__link li:nth-child(1)::before {
     content: "1";
     color: white;
