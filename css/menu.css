@@ -228,6 +228,8 @@ main {
     flex-direction: column; }
   .footer .fas {
     width: 25px; }
+  .footer a {
+    color: white; }
 
 button {
   display: block;
